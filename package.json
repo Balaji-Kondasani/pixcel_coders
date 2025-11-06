@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -45,6 +45,7 @@
     "yjs": "^13.6.27"
   },
   "devDependencies": {
-    "@types/three": "^0.179.0"
+    "@types/three": "^0.179.0",
+    "nodemon": "^3.1.4"
   }
 }
